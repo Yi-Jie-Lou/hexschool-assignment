@@ -1,0 +1,277 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex--col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex--between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.center {
+  margin: auto;
+}
+
+.title--primary {
+  font-size: 80px;
+  line-height: 106px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.title--secondary {
+  font-size: 64px;
+  line-height: 84px;
+  font-weight: medium;
+  margin-top: 56px;
+}
+
+.text {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.color--primary {
+  color: #fff;
+  font-style: italic;
+}
+
+.color--secondary {
+  color: black;
+  font-style: italic;
+}
+
+.banner {
+  height: 958px;
+  background: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week2/banner.png") center center;
+  background-image: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__container {
+  width: 304px;
+}
+
+.icon__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 40px;
+}
+
+.about__container {
+  width: 422px;
+}
+
+.about__img {
+  display: block;
+  margin: auto;
+  margin-bottom: 18px;
+  margin-top: 40px;
+}
+
+.about__title__container {
+  width: 384px;
+  border-top: 1px solid #000;
+  margin-top: 24px;
+  margin-bottom: 56px;
+}
+
+.about__title__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+.brand__container {
+  height: 1405px;
+  width: 100%;
+  background-color: #000;
+  margin-top: 56px;
+  border-top: 1px solid #000;
+}
+
+.brand__content .title--secondary {
+  margin-bottom: 10px;
+}
+
+.brand__content .text:last-child {
+  line-height: 30px;
+  font-style: normal;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.brand__img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 68px;
+}
+
+.brand__img img:first-child {
+  margin: auto;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.brand__img img {
+  display: block;
+}
+
+.works .container + .container {
+  margin-top: 48px;
+}
+
+.works .container:last-child {
+  margin-bottom: 144px;
+}
+
+.works__content .title--secondary {
+  margin-bottom: 14px;
+}
+
+.works__content .text:last-child {
+  line-height: 30px;
+  margin-bottom: 56px;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.works--text {
+  margin-top: 16px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.footer__container {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 56px;
+}
+
+.footer__container .color--primary + .color--primary {
+  margin-top: 16px;
+}
+
+.point {
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
+  border-radius: 50%;
+}
+
+.point--primary {
+  background-color: #891818;
+}
+
+.blank {
+  margin-top: 2px;
+}
+/*# sourceMappingURL=all.css.map */

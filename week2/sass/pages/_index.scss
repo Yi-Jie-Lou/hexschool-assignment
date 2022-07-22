@@ -1,0 +1,132 @@
+.banner {
+    height: 958px;
+    @include background("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week2/banner.png")
+}
+
+.banner__container {
+    width: 304px;
+}
+
+.icon__container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.about__container {
+    width: 422px;
+}
+
+.about__img{
+    display: block;
+    margin: auto;
+    margin-bottom: 18px;
+    margin-top: 40px;
+}
+
+.about__title__container{
+    width: 384px;
+    border-top: 1px solid #000;
+    margin-top: 24px;
+    margin-bottom: 56px;
+}
+
+
+.about__title__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+}
+
+.brand__container{
+    height: 1405px;
+    width: 100%;
+    background-color: #000;
+    margin-top: 56px;
+    border-top: 1px solid #000;
+}
+
+.brand__content {
+    .title--secondary {
+        margin-bottom: 10px;
+    }
+    .text:last-child{
+        line-height: 30px;
+        font-style: normal;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+.brand__img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 68px;
+    img:first-child{
+        margin: auto;
+        grid-area: 1 / 1 / 2 / 3;
+    };
+    img {
+        display: block;
+    }
+}
+
+.works{
+    .container + .container {
+        margin-top: 48px;
+    }
+    .container:last-child{
+        margin-bottom: 144px;
+    }
+} 
+
+.works__content {
+    .title--secondary {
+        margin-bottom: 14px;
+    }
+    .text:last-child{
+        line-height: 30px;
+        margin-bottom: 56px;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+}
+
+.works--text{
+    margin-top: 16px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.footer__container {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 56px;
+    .color--primary + .color--primary{
+        margin-top: 16px;
+    }
+}
+
+
+.point{
+    width: 22px;
+    height: 22px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.point--primary{
+    background-color: #891818;
+}
+
+.blank{
+    margin-top: 2px;
+}

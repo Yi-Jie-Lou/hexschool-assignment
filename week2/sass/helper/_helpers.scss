@@ -1,0 +1,59 @@
+.container {
+  width: 1200px;
+  @include center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex--col {
+  display: flex;
+  flex-direction: column
+}
+
+.flex--between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  @include center;
+}
+
+
+
+.title--primary{
+    font-size: 80px;
+    line-height: 106px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.title--secondary{
+    font-size: 64px;
+    line-height: 84px;
+    font-weight: medium;
+    margin-top: 56px;
+}
+
+.text{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.color--primary {
+  color: #fff;
+  font-style: italic;
+}
+
+.color--secondary {
+  color: black;
+  font-style: italic;
+}

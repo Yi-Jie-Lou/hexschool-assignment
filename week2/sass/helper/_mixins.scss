@@ -1,0 +1,9 @@
+@mixin center {
+    margin: auto;
+}
+
+@mixin background($url) {
+    background: url($url) center center;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
